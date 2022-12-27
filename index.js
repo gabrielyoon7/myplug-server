@@ -26,3 +26,6 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+const stationsRouter = require('./routes/Stations');
+// 추가된 코드
+app.use('/stationsRouter', stationsRouter);
